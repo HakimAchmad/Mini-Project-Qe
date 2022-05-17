@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Categories","Get All Categories","SUCCESS","2022-05-16T15:30:05.8444327+07:00[Asia/Jakarta]","0.0","11.79"
+"Categories","Get By Id Categories","SUCCESS","2022-05-16T15:30:17.63927+07:00[Asia/Jakarta]","0.0","2.72"
+"Categories","POST - Create Categories","SUCCESS","2022-05-16T15:30:20.4403895+07:00[Asia/Jakarta]","0.0","0.94"
