@@ -1,0 +1,14 @@
+Starter\Pages\RegisterPage.class
+Starter\Pages\OrderPage.class
+Starter\StepDefinitions\LoginStep.class
+Starter\CucumberTestSuite.class
+Starter\StepDefinitions\ProductStep.class
+Starter\Pages\TransactionsPage.class
+Starter\Pages\LoginPage.class
+Starter\StepDefinitions\LogoutStep.class
+Starter\StepDefinitions\OrderStep.class
+Starter\StepDefinitions\RegisterStep.class
+Starter\StepDefinitions\TransactionsStep.class
+Utils\RandomNumber.class
+Starter\Pages\ProductPage.class
+Starter\Pages\HomePage.class
