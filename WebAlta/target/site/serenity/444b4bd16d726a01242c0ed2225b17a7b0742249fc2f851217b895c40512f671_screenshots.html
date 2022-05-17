@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css"><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.11.3/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.11.3/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.11.3/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="b2d9483036d614c07a940799b2ec249dfe48cf8a10a0e76160053c151d4b5363.html">Transactions</a></span>
+                > <span class="truncate-60"><a
+                    href="444b4bd16d726a01242c0ed2225b17a7b0742249fc2f851217b895c40512f671.html">Transactions Success </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 16-05-2022 14:57</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Transactions </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                As a user<br />
+I want to Transactions Product<br />
+So that I can manage Transactions product in AltaShop
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Transactions Success
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given I am login account<br>And I Input "&lt;Email&gt;" Email<br>And I Input "&lt;Password&gt;" Password<br>And I click button login<br>And I click buy product<br>When I choose button cart<br>And I choose button plus<br>And I click button pay<br>Then I get success transaction</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="11023edac3681808080020daf60d8cb00148736924ac340653f27273a0570072.png" title=" 1: Transactions Success ({Email=hakim001@gmail.com, Password=Valid@01})" width="1366"/>
+                <img src="11023edac3681808080020daf60d8cb00148736924ac340653f27273a0570072.png" title=" Given I am login account" width="1366"/>
+                <img src="11023edac3681808080020daf60d8cb00148736924ac340653f27273a0570072.png" title=" Validate on login page" width="1366"/>
+                <img src="11023edac3681808080020daf60d8cb00148736924ac340653f27273a0570072.png" title=" Validate on login page (completed)" width="1366"/>
+                <img src="11023edac3681808080020daf60d8cb00148736924ac340653f27273a0570072.png" title=" Given I am login account (completed)" width="1366"/>
+                <img src="11023edac3681808080020daf60d8cb00148736924ac340653f27273a0570072.png" title=" And I Input &quot;hakim001@gmail.com&quot; Email" width="1366"/>
+                <img src="11023edac3681808080020daf60d8cb00148736924ac340653f27273a0570072.png" title=" Input email: hakim001@gmail.com" width="1366"/>
+                <img src="669f2ec0d7eaa715b4a2306635e4911f826e1478389e4d6069bac313598e3bb4.png" title=" Input email: hakim001@gmail.com (completed)" width="1366"/>
+                <img src="669f2ec0d7eaa715b4a2306635e4911f826e1478389e4d6069bac313598e3bb4.png" title=" And I Input &quot;hakim001@gmail.com&quot; Email (completed)" width="1366"/>
+                <img src="669f2ec0d7eaa715b4a2306635e4911f826e1478389e4d6069bac313598e3bb4.png" title=" And I Input &quot;Valid@01&quot; Password" width="1366"/>
+                <img src="669f2ec0d7eaa715b4a2306635e4911f826e1478389e4d6069bac313598e3bb4.png" title=" Input password: Valid@01" width="1366"/>
+                <img src="646f61032dc03b815b47c6736c61e6c833efeebb3f5d5fc7a95a3267024c91b3.png" title=" Input password: Valid@01 (completed)" width="1366"/>
+                <img src="646f61032dc03b815b47c6736c61e6c833efeebb3f5d5fc7a95a3267024c91b3.png" title=" And I Input &quot;Valid@01&quot; Password (completed)" width="1366"/>
+                <img src="646f61032dc03b815b47c6736c61e6c833efeebb3f5d5fc7a95a3267024c91b3.png" title=" And I click button login" width="1366"/>
+                <img src="646f61032dc03b815b47c6736c61e6c833efeebb3f5d5fc7a95a3267024c91b3.png" title=" Click login button" width="1366"/>
+                <img src="28ea2049c679498977c94a067b7d6a90b7d9bcd156b0b659e3ee2cfb6ea55a35.png" title=" Click login button (completed)" width="1366"/>
+                <img src="28ea2049c679498977c94a067b7d6a90b7d9bcd156b0b659e3ee2cfb6ea55a35.png" title=" And I click button login (completed)" width="1366"/>
+                <img src="28ea2049c679498977c94a067b7d6a90b7d9bcd156b0b659e3ee2cfb6ea55a35.png" title=" And I click buy product" width="1366"/>
+                <img src="28ea2049c679498977c94a067b7d6a90b7d9bcd156b0b659e3ee2cfb6ea55a35.png" title=" Click product satu" width="1366"/>
+                <img src="13015b5623864b02dcb274fbf8405e0b7d041f6d0b911d6790c6d179e2a57e8f.png" title=" Click product satu (completed)" width="1366"/>
+                <img src="13015b5623864b02dcb274fbf8405e0b7d041f6d0b911d6790c6d179e2a57e8f.png" title=" And I click buy product (completed)" width="1366"/>
+                <img src="13015b5623864b02dcb274fbf8405e0b7d041f6d0b911d6790c6d179e2a57e8f.png" title=" When I choose button cart" width="1366"/>
+                <img src="13015b5623864b02dcb274fbf8405e0b7d041f6d0b911d6790c6d179e2a57e8f.png" title=" Click button cart" width="1366"/>
+                <img src="2c2e74c3c08aff81bba363c618eb4b70afd103cfe9b2041773fc5a5f54d7781d.png" title=" Click button cart (completed)" width="1366"/>
+                <img src="2c2e74c3c08aff81bba363c618eb4b70afd103cfe9b2041773fc5a5f54d7781d.png" title=" When I choose button cart (completed)" width="1366"/>
+                <img src="2c2e74c3c08aff81bba363c618eb4b70afd103cfe9b2041773fc5a5f54d7781d.png" title=" And I choose button plus" width="1366"/>
+                <img src="2c2e74c3c08aff81bba363c618eb4b70afd103cfe9b2041773fc5a5f54d7781d.png" title=" Click add quantity" width="1366"/>
+                <img src="29abc699c0351a7fedea7347227fe39f6cde291af3fa814657d449e994b62a97.png" title=" Click add quantity (completed)" width="1366"/>
+                <img src="29abc699c0351a7fedea7347227fe39f6cde291af3fa814657d449e994b62a97.png" title=" And I choose button plus (completed)" width="1366"/>
+                <img src="29abc699c0351a7fedea7347227fe39f6cde291af3fa814657d449e994b62a97.png" title=" And I click button pay" width="1366"/>
+                <img src="29abc699c0351a7fedea7347227fe39f6cde291af3fa814657d449e994b62a97.png" title=" Click pay order" width="1366"/>
+                <img src="6d7cf9840234b66ff1398ac3dca1aeb1c10b51ddaa8cebf5d4e2dc30ad95c555.png" title=" Click pay order (completed)" width="1366"/>
+                <img src="6d7cf9840234b66ff1398ac3dca1aeb1c10b51ddaa8cebf5d4e2dc30ad95c555.png" title=" And I click button pay (completed)" width="1366"/>
+                <img src="6d7cf9840234b66ff1398ac3dca1aeb1c10b51ddaa8cebf5d4e2dc30ad95c555.png" title=" Then I get success transaction" width="1366"/>
+                <img src="6d7cf9840234b66ff1398ac3dca1aeb1c10b51ddaa8cebf5d4e2dc30ad95c555.png" title=" Header appears" width="1366"/>
+                <img src="9d3b7dabf2cd78c1663c18f6418fffbc23ccf30427269491679a45e432531dd1.png" title=" Header appears (completed)" width="1366"/>
+                <img src="9d3b7dabf2cd78c1663c18f6418fffbc23ccf30427269491679a45e432531dd1.png" title=" Header text equal" width="1366"/>
+                <img src="9d3b7dabf2cd78c1663c18f6418fffbc23ccf30427269491679a45e432531dd1.png" title=" Header text equal (completed)" width="1366"/>
+                <img src="9d3b7dabf2cd78c1663c18f6418fffbc23ccf30427269491679a45e432531dd1.png" title=" Then I get success transaction (completed)" width="1366"/>
+                <img src="9d3b7dabf2cd78c1663c18f6418fffbc23ccf30427269491679a45e432531dd1.png" title=" 1: Transactions Success ({Email=hakim001@gmail.com, Password=Valid@01}) (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.2.1</span>
+</div>
+</body>
+</html>
