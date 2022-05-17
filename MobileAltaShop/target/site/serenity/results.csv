@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Login","Login scenario","SUCCESS","2022-05-16T20:37:39.0073288+07:00[Asia/Jakarta]","0.0","141.65"
+"Logout","Success Logout","SUCCESS","2022-05-16T20:40:00.6783208+07:00[Asia/Jakarta]","0.0","26.65"
+"Product","See Product AltaShop","SUCCESS","2022-05-16T20:40:27.3500446+07:00[Asia/Jakarta]","0.0","23.07"
+"Product","Buying Product AltaShop","SUCCESS","2022-05-16T20:40:50.4332504+07:00[Asia/Jakarta]","0.0","23.26"
+"Register","Register scenario","SUCCESS","2022-05-16T20:41:13.7183857+07:00[Asia/Jakarta]","0.0","175.67"
