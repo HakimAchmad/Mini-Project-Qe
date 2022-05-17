@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Categories" skipped="0" tests="4" time="15.44" timestamp="2022-05-16 03:30:05"><testcase name="Get All Categories"/><testcase name="Get By Id Categories"/><testcase name="POST - Create Categories"/></testsuite>

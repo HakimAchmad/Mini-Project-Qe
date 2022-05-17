@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Transactions","Get All Transactions","SUCCESS","2022-05-16T15:30:05.8765155+07:00[Asia/Jakarta]","0.0","11.68"
+"Transactions","Get By Id Transactions","SUCCESS","2022-05-16T15:30:17.564368+07:00[Asia/Jakarta]","0.0","2.82"
+"Transactions","POST - Create Transactions valid","SUCCESS","2022-05-16T15:30:20.393468+07:00[Asia/Jakarta]","0.0","0.85"
+"Transactions","POST - Create Transactions Invalid","SUCCESS","2022-05-16T15:30:21.2560457+07:00[Asia/Jakarta]","0.0","2.84"

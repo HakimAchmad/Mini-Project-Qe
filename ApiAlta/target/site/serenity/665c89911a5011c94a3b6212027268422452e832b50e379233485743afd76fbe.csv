@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Products","Get All Products","SUCCESS","2022-05-16T15:30:05.8919954+07:00[Asia/Jakarta]","0.0","13.92"
+"Products","Get By Id Products","SUCCESS","2022-05-16T15:30:19.8166843+07:00[Asia/Jakarta]","0.0","0.6"
+"Products","Create Product","SUCCESS","2022-05-16T15:30:20.4280785+07:00[Asia/Jakarta]","0.0","1.63"

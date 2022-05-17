@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Products" skipped="0" tests="4" time="16.15" timestamp="2022-05-16 03:30:05"><testcase name="Get All Products"/><testcase name="Get By Id Products"/><testcase name="Create Product"/></testsuite>
