@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css"><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.11.3/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.11.3/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.11.3/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="cc8248abab6b164b18c889afb85945620f8bde1409264023a27036ab64a553ef.html">Logout</a></span>
+                > <span class="truncate-60"><a
+                    href="476423a0ae0d4ce6f6f8b781eedb8125b83def4b555c81d9f2eeb7d328789de0.html">Success Logout </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 20-05-2022 16:25</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Logout </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                As a user<br />
+I want to Logout Account<br />
+So that I can change Account AltaShop
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Success Logout
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given I am login account page<br>And I Input "&lt;email&gt;" email<br>And I Input "&lt;password&gt;" password<br>And I Click login button<br>When I Click button account<br>And I choose button logout<br>Then I get success logout</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="11023edac3681808080020daf60d8cb00148736924ac340653f27273a0570072.png" title=" 1: Success Logout ({email=hakim001@gmail.com, password=Valid@01})" width="1366"/>
+                <img src="11023edac3681808080020daf60d8cb00148736924ac340653f27273a0570072.png" title=" Given I am login account page" width="1366"/>
+                <img src="11023edac3681808080020daf60d8cb00148736924ac340653f27273a0570072.png" title=" Validate on login page" width="1366"/>
+                <img src="11023edac3681808080020daf60d8cb00148736924ac340653f27273a0570072.png" title=" Given I am login account page" width="1366"/>
+                <img src="11023edac3681808080020daf60d8cb00148736924ac340653f27273a0570072.png" title=" Validate on login page (completed)" width="1366"/>
+                <img src="11023edac3681808080020daf60d8cb00148736924ac340653f27273a0570072.png" title=" And I Input &quot;hakim001@gmail.com&quot; email" width="1366"/>
+                <img src="11023edac3681808080020daf60d8cb00148736924ac340653f27273a0570072.png" title=" Input email: hakim001@gmail.com" width="1366"/>
+                <img src="c826c6906102ee59bb9ed3a181890168104c235bc4792eba07f3c8b5214a75bb.png" title=" Input email: hakim001@gmail.com (completed)" width="1366"/>
+                <img src="c826c6906102ee59bb9ed3a181890168104c235bc4792eba07f3c8b5214a75bb.png" title=" And I Input &quot;hakim001@gmail.com&quot; email (completed)" width="1366"/>
+                <img src="c826c6906102ee59bb9ed3a181890168104c235bc4792eba07f3c8b5214a75bb.png" title=" And I Input &quot;Valid@01&quot; password" width="1366"/>
+                <img src="c826c6906102ee59bb9ed3a181890168104c235bc4792eba07f3c8b5214a75bb.png" title=" Input password: Valid@01" width="1366"/>
+                <img src="fe9f9279912c406f663debb34df33bfe7e6599be8d99bb773c0c2623809841bc.png" title=" Input password: Valid@01 (completed)" width="1366"/>
+                <img src="fe9f9279912c406f663debb34df33bfe7e6599be8d99bb773c0c2623809841bc.png" title=" And I Input &quot;Valid@01&quot; password (completed)" width="1366"/>
+                <img src="fe9f9279912c406f663debb34df33bfe7e6599be8d99bb773c0c2623809841bc.png" title=" And I Click login button" width="1366"/>
+                <img src="fe9f9279912c406f663debb34df33bfe7e6599be8d99bb773c0c2623809841bc.png" title=" Click login button" width="1366"/>
+                <img src="030806f87173b5814cb51b288fb2dac110bc40243c711af5e614a27b39484fa3.png" title=" Click login button (completed)" width="1366"/>
+                <img src="030806f87173b5814cb51b288fb2dac110bc40243c711af5e614a27b39484fa3.png" title=" And I Click login button (completed)" width="1366"/>
+                <img src="030806f87173b5814cb51b288fb2dac110bc40243c711af5e614a27b39484fa3.png" title=" When I Click button account" width="1366"/>
+                <img src="030806f87173b5814cb51b288fb2dac110bc40243c711af5e614a27b39484fa3.png" title=" Click button account" width="1366"/>
+                <img src="a10e4b0b0ebf20c3e85842965c42dd2228d373b5566786115a392bf96c71fbe3.png" title=" Click button account (completed)" width="1366"/>
+                <img src="a10e4b0b0ebf20c3e85842965c42dd2228d373b5566786115a392bf96c71fbe3.png" title=" When I Click button account (completed)" width="1366"/>
+                <img src="a10e4b0b0ebf20c3e85842965c42dd2228d373b5566786115a392bf96c71fbe3.png" title=" And I choose button logout" width="1366"/>
+                <img src="a10e4b0b0ebf20c3e85842965c42dd2228d373b5566786115a392bf96c71fbe3.png" title=" Click button logout" width="1366"/>
+                <img src="11023edac3681808080020daf60d8cb00148736924ac340653f27273a0570072.png" title=" And I choose button logout" width="1366"/>
+                <img src="11023edac3681808080020daf60d8cb00148736924ac340653f27273a0570072.png" title=" Click button logout (completed)" width="1366"/>
+                <img src="11023edac3681808080020daf60d8cb00148736924ac340653f27273a0570072.png" title=" Then I get success logout" width="1366"/>
+                <img src="11023edac3681808080020daf60d8cb00148736924ac340653f27273a0570072.png" title=" Header appears" width="1366"/>
+                <img src="11023edac3681808080020daf60d8cb00148736924ac340653f27273a0570072.png" title=" Header appears (completed)" width="1366"/>
+                <img src="11023edac3681808080020daf60d8cb00148736924ac340653f27273a0570072.png" title=" Header text equal" width="1366"/>
+                <img src="11023edac3681808080020daf60d8cb00148736924ac340653f27273a0570072.png" title=" Header text equal (completed)" width="1366"/>
+                <img src="11023edac3681808080020daf60d8cb00148736924ac340653f27273a0570072.png" title=" Validate on login page" width="1366"/>
+                <img src="11023edac3681808080020daf60d8cb00148736924ac340653f27273a0570072.png" title=" Validate on login page (completed)" width="1366"/>
+                <img src="11023edac3681808080020daf60d8cb00148736924ac340653f27273a0570072.png" title=" Then I get success logout (completed)" width="1366"/>
+                <img src="11023edac3681808080020daf60d8cb00148736924ac340653f27273a0570072.png" title=" 1: Success Logout ({email=hakim001@gmail.com, password=Valid@01}) (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.2.1</span>
+</div>
+</body>
+</html>

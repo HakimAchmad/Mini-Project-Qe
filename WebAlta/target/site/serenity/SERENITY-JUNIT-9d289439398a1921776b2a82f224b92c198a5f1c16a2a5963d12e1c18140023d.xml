@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Order" skipped="0" tests="3" time="7.17" timestamp="2022-05-20 04:25:32"><testcase name="Preparation Order"/><testcase name="Add amount order Product"/><testcase name="Minus amount order Product"/></testsuite>
